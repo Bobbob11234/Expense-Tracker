@@ -79,9 +79,9 @@ body {
   
   .btn {
     cursor: pointer;
-    background-color: #9c88ff;
+    background-color: #d3e2f2;
     box-shadow: var(--box-shadow);
-    color: #fff;
+    color: #000000;
     border: 0;
     display: block;
     font-size: 16px;
@@ -92,7 +92,16 @@ body {
   }
 
   .btn:hover{
-    background-color:#846cfc;
+    color:white;
+  }
+
+  .credit:hover{
+    background-color:#ed6060;
+    border-radius:10px;
+  }
+
+  .debit:hover{
+    background-color:#60ed67;
     border-radius:10px;
   }
   
@@ -117,11 +126,6 @@ body {
   text-transform:uppercase;
   cursor:pointer;
 }
-
-.selected{
-  background-color:green;
-}
-
   .list {
     list-style-type: none;
     padding: 0;
@@ -142,6 +146,8 @@ body {
     padding: 10px;
     margin: 10px 0;
     width:300px;
+    transition:all 5ms;
+    transition-timing-function: ;  
   }
 
   .list li:hover{
@@ -157,21 +163,10 @@ body {
     border-right: 5px solid #c0392b;
   }
   
-  .delete-btn {
-    cursor: pointer;
-    background-color: #e74c3c;
-    border: 0;
-    color: #fff;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 2px 5px;
-    position: absolute;
-    top:40%;
-    left:-20px;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
   .list li:hover .delete-btn {
     opacity: 1;
+  }
+
+  .form-control{
+    margin-top:15px;
   }

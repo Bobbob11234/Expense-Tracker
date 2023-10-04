@@ -26,5 +26,6 @@ export const Transaction = ({ transaction }) => {
     <li className={transaction.amount < 0 ? 'minus' : 'plus'} onClick={() => deleteTransaction(transaction.id)}>
       {transaction.text} <span>{sign}{moneyFormatter(transaction.amount)}</span>
     </li>
+
   )
 }

@@ -9,7 +9,8 @@ export const TransactionList = () => {
     <>
       <h3>History</h3>
       <ul className="list">
-        {transactions.map(transaction => (<Transaction transaction={transaction} />))}
+        {transactions.length==0?<p>Add Transactions to See History</p>:
+        transactions.map(transaction => (<Transaction transaction={transaction} />))}
       </ul>
     </>
   )
